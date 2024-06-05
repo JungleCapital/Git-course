@@ -1,0 +1,14 @@
+Here I write down how to fix the last commit in case I forgot to
+include a file to the last commit
+
+To do so we use git commit --amend
+This will fix just the last commit, steps below
+
+we first add the forgotten file 
+git add "here name of file"
+
+then we use 
+git commit --amend
+
+and that is it, now the file i forgot to add was added to the last commit
+IT DID NOT CREATE A NEW COMMIT
