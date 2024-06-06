@@ -16,5 +16,5 @@ Here I will save the commands learn
     with git add "name of file" then we can use git commit --amend 
 
 7. git log - will log all commits
-8. git lot --oneline - will show all commits with notes in one line
+8. git log --oneline - will show all commits with notes in one line
 
