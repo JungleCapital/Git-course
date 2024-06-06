@@ -15,3 +15,6 @@ Here I will save the commands learn
     Note: the file in which changes were made has to bee added again 
     with git add "name of file" then we can use git commit --amend 
 
+7. git log - will log all commits
+8. git lot --oneline - will show all commits with notes in one line
+
