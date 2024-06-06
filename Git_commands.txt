@@ -1,0 +1,8 @@
+Here I will save the commands learn
+
+1. git switch - this swichs between branches 
+2. git branch - shows the existing branches
+3. git branch + name - creates new branch
+4. git commint -m - it commits and write the comment in one go
+5. git commit -a -m - it adds to commit and write the comment in one go
+
