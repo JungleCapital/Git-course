@@ -5,4 +5,13 @@ Here I will save the commands learn
 3. git branch + name - creates new branch
 4. git commint -m - it commits and write the comment in one go
 5. git commit -a -m - it adds to commit and write the comment in one go
+    
+    Note: for "git commit -a -m" to work the new file has to be added 
+    first and then if a new change is made it will work
+
+6. git commit --amend - will re-save the last commit with new changes 
+   if made
+    
+    Note: the file in which changes were made has to bee added again 
+    with git add "name of file" then we can use git commit --amend 
 
