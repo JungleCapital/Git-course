@@ -24,3 +24,4 @@ Here I will save the commands learn
                     in that branch and it has to be fully merged
 13. git branch -D - it will forece to delete the branch even if is
                     not merged
+14. git branch -m - will rename the branch you are in
