@@ -10,7 +10,7 @@ Here I will save the commands learn
     first and then if a new change is made it will work
 
 6. git commit --amend - will re-save the last commit with new changes 
-   if made
+                        if made
     
     Note: the file in which changes were made has to bee added again 
     with git add "name of file" then we can use git commit --amend 
@@ -20,3 +20,7 @@ Here I will save the commands learn
 9. git switch -c - it will create a new branch and switch all in one go
 10. touch - it creates new files
 11. mkdit - will create new directories
+12. git branch -d - will delete a branch but you don't have to be 
+                    in that branch and it has to be fully merged
+13. git branch -D - it will forece to delete the branch even if is
+                    not merged
