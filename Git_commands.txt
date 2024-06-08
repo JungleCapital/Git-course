@@ -25,3 +25,6 @@ Here I will save the commands learn
 13. git branch -D - it will forece to delete the branch even if is
                     not merged
 14. git branch -m - will rename the branch you are in
+15. git merge + branch name - it merges branch, but we must be in
+                    the receiving branch
+16. git branch -v - it shows the branchs with the last commits notes
