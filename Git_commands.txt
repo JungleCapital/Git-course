@@ -17,7 +17,7 @@ Here I will save the commands learn
 
 7. git log - will log all commits
 8. git log --oneline - will show all commits with notes in one line
-<<<<<<< HEAD
+
 9. git switch -c - it will create a new branch and switch all in one go
 10. touch - it creates new files
 11. mkdit - will create new directories
@@ -29,6 +29,5 @@ Here I will save the commands learn
 15. git merge + branch name - it merges branch, but we must be in
                     the receiving branch
 16. git branch -v - it shows the branchs with the last commits notes
-=======
 
->>>>>>> Branch_1
+
