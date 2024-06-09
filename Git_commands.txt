@@ -9,8 +9,7 @@ Here I will save the commands learn
     Note: for "git commit -a -m" to work the new file has to be added 
     first and then if a new change is made it will work
 
-6. git commit --amend - will re-save the last commit with new changes 
-                        if made
+6. git commit --amend - will re-save the last commit with new changes if made
     
     Note: the file in which changes were made has to bee added again 
     with git add "name of file" then we can use git commit --amend 
@@ -23,11 +22,13 @@ Here I will save the commands learn
 11. mkdit - will create new directories
 12. git branch -d - will delete a branch but you don't have to be 
                     in that branch and it has to be fully merged
-13. git branch -D - it will forece to delete the branch even if is
-                    not merged
+13. git branch -D - it will forece to delete the branch even if is not merged
 14. git branch -m - will rename the branch you are in
 15. git merge + branch name - it merges branch, but we must be in
                     the receiving branch
 16. git branch -v - it shows the branchs with the last commits notes
+17. git diff - lists all changes that are NOT staged
+18. git diff HEAD - lists all changes in the working tree since the las commit
+
 
 
