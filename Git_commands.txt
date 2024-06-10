@@ -28,7 +28,14 @@ Here I will save the commands learn
                     the receiving branch
 16. git branch -v - it shows the branchs with the last commits notes
 17. git diff - lists all changes that are NOT staged
-18. git diff HEAD - lists all changes in the working tree since the las commit
+18. git diff HEAD - lists all changes in the working tree since the las commit 
+                    both staged and not staged
+19. git diff --staged - will list the changes between the staging area and last commit
+
+    Note: is to show what will be included in the commit which are alread added (staged)
+
+20. git diff --cached - do the same as "git diff --staged"
+21. git diff HEAD + [name of file] - will show all changes in just the file called
 
 
 
