@@ -40,5 +40,5 @@ Here I will save the commands learn
 
     Note: name of branches can also be separated by space and not only (..)
 
-
-
+23. git diff commit1..commit2 - will show the changes between commits 
+                                not matter what commit
