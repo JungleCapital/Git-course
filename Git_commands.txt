@@ -36,6 +36,9 @@ Here I will save the commands learn
 
 20. git diff --cached - do the same as "git diff --staged"
 21. git diff HEAD + [name of file] - will show all changes in just the file called
+22. git diff branch1..branch2 - will show changes between branches
+
+    Note: name of branches can also be separated by space and not only (..)
 
 
 
