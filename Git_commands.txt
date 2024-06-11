@@ -45,3 +45,4 @@ Here I will save the commands learn
 
 25. git diff commit1..commit2 - will show the changes between commits 
                                 not matter what commit
+26. Nothing being added
