@@ -45,4 +45,12 @@ Here I will save the commands learn
 
 25. git diff commit1..commit2 - will show the changes between commits 
                                 not matter what commit
-26. Nothing being added
+
+26. git stash - saves uncommited changes tha we can come back later but remove them visually
+
+    Note: now Git will let swtich branches without having to commit changes on a
+          working branch
+
+27. git stash pop - will remove them from stash and put them back in the working
+                    file in the branch it was previously stashed.
+
