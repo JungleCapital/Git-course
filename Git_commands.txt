@@ -58,3 +58,5 @@ Here I will save the commands learn
 
     Note: will be usefull when needed to apply same changes in multiple branchs
 
+30. git stash list - view the different stashes 
+31. git stash apply stash@{2} - will apply the second to last stash satacked in the list
