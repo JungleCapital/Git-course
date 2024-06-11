@@ -45,8 +45,6 @@ Here I will save the commands learn
 
 25. git diff commit1..commit2 - will show the changes between commits 
                                 not matter what commit
-<<<<<<< Updated upstream
-=======
 
 26. git stash - saves uncommited changes tha we can come back later but remove them visually
 
@@ -60,4 +58,7 @@ Here I will save the commands learn
 
     Note: will be usefull when needed to apply same changes in multiple branchs
 
->>>>>>> Stashed changes
+30. git stash list - view the different stashes 
+31. git stash apply stash@{2} - will apply the stash with that index back to the stack list
+32. git stash drop stash@{2} - will drop the stash with that index saved in the stack list 
+33. git stash clear - will clear all the stack stashes in the list
