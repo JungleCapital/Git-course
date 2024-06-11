@@ -54,3 +54,7 @@ Here I will save the commands learn
 27. git stash pop - will remove them from stash and put them back in the working
                     file in the branch it was previously stashed.
 
+28. git stash apply - will apply changes stashed away without removing it from the stash
+
+    Note: will be usefull when needed to apply same changes in multiple branchs
+
