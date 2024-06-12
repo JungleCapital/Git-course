@@ -62,3 +62,6 @@ Here I will save the commands learn
 31. git stash apply stash@{2} - will apply the stash with that index back to the stack list
 32. git stash drop stash@{2} - will drop the stash with that index saved in the stack list 
 33. git stash clear - will clear all the stack stashes in the list
+34. git checkout + [commit-hash] - to go back to previous commits 
+
+    Note: to return to present use git switch + [branch name]
