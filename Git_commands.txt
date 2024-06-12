@@ -59,3 +59,9 @@ Here I will save the commands learn
 
 35. git checkout HEAD~1 - will go to the previous commit
 36. git switch + (-) - will go back to whatever commit or branch I was on "git switch -"
+37. git checkout HEAD + [file name] - will revert work not yet staged or commited back to the last commit
+
+    Note: git chechout -- + [file name] do the same we can use (--) instead of HEAD
+
+38. git restore + [file name] - will do the same as git checout HEAD + [file name], will revert changes to the last commit
+39. git restore --source HEAD~1 + [file name] - will undo work to specific commit we point out with "HEAD~(number)"
