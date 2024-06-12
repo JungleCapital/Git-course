@@ -21,39 +21,30 @@ Here I will save the commands learn
 10. git switch -c - it will create a new branch and switch all in one go
 11. touch - it creates new files
 12. mkdit - will create new directories
-13. git branch -d - will delete a branch but you don't have to be 
-                    in that branch and it has to be fully merged
+13. git branch -d - will delete a branch but you don't have to be in that branch and it has to be fully merged
 14. git branch -D - it will forece to delete the branch even if is not merged
 15. git branch -m - will rename the branch you are in
-16. git merge + branch name - it merges branch, but we must be in
-                    the receiving branch
+16. git merge + branch name - it merges branch, but we must be in the receiving branch
 17. git branch -v - it shows the branchs with the last commits notes
 18. git diff - lists all changes that are NOT staged
-19. git diff HEAD - lists all changes in the working tree since the las commit 
-                    both staged and not staged
+19. git diff HEAD - lists all changes in the working tree since the las commit both staged and not staged
 20. git diff --staged - will list the changes between the staging area and last commit
 
     Note: is to show what will be included in the commit which are alread added (staged)
 
 21. git diff --cached - do the same as "git diff --staged"
 22. git diff HEAD + [name of file] - will show all changes in just the file called
-23. git diff --staged + [name of file] - same as git diff HEAD [name] 
-                                         but for staged files only
+23. git diff --staged + [name of file] - same as git diff HEAD [name] but for staged files only
 24. git diff branch1..branch2 - will show changes between branches
 
     Note: name of branches can also be separated by space and not only (..)
 
-25. git diff commit1..commit2 - will show the changes between commits 
-                                not matter what commit
-
+25. git diff commit1..commit2 - will show the changes between commits not matter what commit
 26. git stash - saves uncommited changes tha we can come back later but remove them visually
 
-    Note: now Git will let swtich branches without having to commit changes on a
-          working branch
+    Note: now Git will let swtich branches without having to commit changes on a working branch
 
-27. git stash pop - will remove them from stash and put them back in the working
-                    file in the branch it was previously stashed.
-
+27. git stash pop - will remove them from stash and put them back in the working file in the branch it was previously stashed.
 28. git stash apply - will apply changes stashed away without removing it from the stash
 
     Note: will be usefull when needed to apply same changes in multiple branchs
@@ -65,3 +56,6 @@ Here I will save the commands learn
 34. git checkout + [commit-hash] - to go back to previous commits 
 
     Note: to return to present use git switch + [branch name]
+
+35. git checkout HEAD~1 - will go to the previous commit
+36. git switch + (-) - will go back to whatever commit or branch I was on "git switch -"
