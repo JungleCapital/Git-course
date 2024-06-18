@@ -70,5 +70,15 @@ Here I will save the commands learn
     Note: it can unstage a single file or many, let's say we staged 2 files but really just want one to be included in the 
           next commit, so we can remove just one with the command git restore --staged + [single/many file names]
 
+41. git reset + [commit-hash] - will reset the repo back to a specific commit. The commits are gone.
+
+    Note: This is usefull in case you made commints on a cetain branch, but you actually meant to make them on a separate branch
+    Note 2: This just undo commints but don't reset the changes made, changes will still be there, is usefull if you want to 
+            keep that work and save the chages on another branch by making a commint
+
+42. git reset --hard + [commit-hash] - it undo the commits and removes the changes made
+
+
+
 
 
