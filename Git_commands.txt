@@ -65,3 +65,10 @@ Here I will save the commands learn
 
 38. git restore + [file name] - will do the same as git checout HEAD + [file name], will revert changes to the last commit
 39. git restore --source HEAD~1 + [file name] - will undo work to specific commit we point out with "HEAD~(number)"
+40. git restore --staged + [file name] - this is to remove the files staged with "git add" 
+
+    Note: it can unstage a single file or many, let's say we staged 2 files but really just want one to be included in the 
+          next commit, so we can remove just one with the command git restore --staged + [single/many file names]
+
+
+
