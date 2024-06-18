@@ -78,6 +78,9 @@ Here I will save the commands learn
 
 42. git reset --hard + [commit-hash] - it undo the commits and removes the changes made
 
+43. git revert + [commit-hash] - delete the work and make a new commit, so you get rid of the changes but keep the record of them
+
+    Note: so you make don't delete the previous commit, it still exist but changes are gone and a new commit was made.
 
 
 
