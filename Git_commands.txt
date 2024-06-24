@@ -86,6 +86,12 @@ Here I will save the commands learn
 
     Note: so you make don't delete the previous commit, it still exist but changes are gone and a new commit was made.
 
+GitHub
+
+44. git remote -v - Shows the name of the remote and the corresponding repository URL
+45. git remote add [name] [URL] - To add a new remote we add a label and the URL
+46. git remote rename [old name] [new name] - it renames the remote
+47. git remore remove [name] - To get rib of a remote
 
 
 
