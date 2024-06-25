@@ -84,14 +84,33 @@ Here I will save the commands learn
 
 43. git revert + [commit-hash] - delete the work and make a new commit, so you get rid of the changes but keep the record of them
 
-    Note: so you make don't delete the previous commit, it still exist but changes are gone and a new commit was made.
+    Note: so you don't delete the previous commit, it still exist but changes are gone and a new commit was made.
 
 GitHub
 
 44. git remote -v - Shows the name of the remote and the corresponding repository URL
 45. git remote add [name] [URL] - To add a new remote we add a label and the URL
 46. git remote rename [old name] [new name] - it renames the remote
-47. git remore remove [name] - To get rib of a remote
+47. git remote remove [name] - To get rib of a remote
+48. git push + [remote name] + [branch name] - it will send and update this branch onto the repo on GitHub
+
+    Example: git push origin master  or   git push origin branch3
+
+49. git push origin master:branch3 - This will push the master branch to the branch3 on the cloud
+
+    Note: if we use colon (:) we tell git which brach we want to push onto a different branch in GitHub, first name is the local
+          branch and second name after the colon is the branch we are pushing to.
+
+50. git push -u origin master - it sets the upstream of the local master branch if I'm on the local 
+                                master (it connets the branch I'm on to the one we want on GitHub)
+
+    Note: it connets the local branch to the origin master (master on GitHub) so we could type just git push and it will uploal
+          directly the local master to the master or main on GitHub automatically without having to specify it.
+
+51. git push -u local:GitHub - Here we connect set the upstream from an specific branch to a specific (different) branch on GitHub
+
+
+
 
 
 
