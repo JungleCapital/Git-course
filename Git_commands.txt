@@ -108,6 +108,7 @@ GitHub
           directly the local master to the master or main on GitHub automatically without having to specify it.
 
 51. git push -u local:GitHub - Here we connect set the upstream from an specific branch to a specific (different) branch on GitHub
+52. git branch -M main - This upper -M will rename the branch we are on, it to be in concordance with GitHub to set mastor to main
 
 
 
