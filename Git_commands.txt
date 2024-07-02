@@ -57,11 +57,11 @@ Here I will save the commands learn
 31. git stash apply stash@{2} - will apply the stash with that index back to the stack list
 32. git stash drop stash@{2} - will drop the stash with that index saved in the stack list 
 33. git stash clear - will clear all the stack stashes in the list
-34. git checkout + [commit-hash] - to go back to previous commits 
+34. git checkout + [commit-hash] - to go back to previous commits (detach head)
 
     Note: to return to present use git switch + [branch name]
 
-35. git checkout HEAD~1 - will go to the previous commit
+35. git checkout HEAD~1 - will go to the previous commit (detach head)
 36. git switch + (-) - will go back to whatever commit or branch I was on "git switch -"
 37. git checkout HEAD + [file name] - will revert work not yet staged or commited back to the last commit
 
@@ -109,7 +109,8 @@ GitHub
 
 51. git push -u local:GitHub - Here we connect set the upstream from an specific branch to a specific (different) branch on GitHub
 52. git branch -M main - This upper -M will rename the branch we are on, it to be in concordance with GitHub to set mastor to main
-
+53. git branch -r - it shows the branchs the remote repository knows about from all existing branches in the local repo
+54. git checkout origin/main - will detach head and go back to the last commit the remore repo knows about
 
 
 
