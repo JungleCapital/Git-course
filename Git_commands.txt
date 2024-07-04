@@ -112,6 +112,22 @@ GitHub
 53. git branch -r - it shows the branchs the remote repository knows about from all existing branches in the local repo
 54. git checkout origin/main - will detach head and go back to the last commit the remore repo knows about
 
+    --Note: When we clone a new repository we only have as workspace the main branch, but we cam have a copy of the other branches
+            in our local machine and set it up to track the remote branch.  Below is how.
+
+55. git switch [remore-branch-name] - it creates a new local branch from the remote branch of the same name, makes me a local branch1
+                                      and set it up to track the remote origin/[branch-name]
+
+56. git fetch [remote] [branch] - command fetches branches and history from an specific remote repository, it only updates remote 
+                                  tracking branches, Ex. "git fetch origin main"
+
+    Note: Think of it as "please got and get the latest from Github, but don't screw up my working directory
+
+55. git fetch origin - will fetch all changes from the origin remote repository.
+
+
+
+
 
 
 
