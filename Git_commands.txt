@@ -126,11 +126,13 @@ GitHub
 55. git fetch origin - will fetch all changes from the origin remote repository.
 56. git checkout origin/[branch-name] - it allows us to see changes made and pushed from other colaborators on this branch 
                                         through a detached head
-57. git pull [remore] [branch] - will retrieve changes from remote repo and update our HEAD branch, its like "git fetch + git merge"
+57. git pull [remote] [branch] - will retrieve changes from remote repo and update our HEAD branch, its like "git fetch + git merge"
 
     Note: Changes will be merged on the branch we run it from, if we run it from master changes will be made to master branch
     Note 2: As a good practice before PUSH any change first PULL, fix any conflict that might exist and the you can PUSH changes
     Note 3: We can use simple "git pull" Ex. if we are in the main branch it is normally tracking origin/main already 
+
+
 
 
 
