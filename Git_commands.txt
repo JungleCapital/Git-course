@@ -173,16 +173,29 @@ BACK TO GIT COMMANDS
         fixup - use commit contents but meld it into previous commit and discard the commit message
         drop - remove commit
 
+63. git tag - Prints a list of all tags in the current repository
+64. git tal -l "*beta*" - This can search for tags match a particular pattern passing in a wildcard 
 
+    Note: "*beta*" was used as example and will print a list of tags that incluse "beta" in their name
 
+65. git checkout [tag] - To view the state of a repo at a particular tag (this takes us to a detached HEAD)
 
+    Note: Example git checkout 15.0.1
 
+66. git diff [tag1] [tag2] - This is to compare the difference between 2 tags (2 versions of the code) 
 
+    Note: it can also be done as follows git diff [ta1]..[tag2] (separated by 2 dots)
 
+67. git tag [give tag name] - Creates a new tag, Ex. git tag v17.0.1 (this is a lightweight tag) and creates the tag at HEAD point.
+68. git tag -a [give name] - This sets an annotedated tag which helps to set tags with more notes and details
+69. git show [name of tag] - To check the notes make on the annotated tag, the date and who made it.
+70. git tag [give tag name] [commit hash] - This adds a tag to previous commits, we set a tag name and provide the commit hash
 
+    Note: It can also be done with annotated tags Ex. "git tag -a [give tag name] [commit hash]"
 
-
-
+71. git tag -f [tag name] [commit hash] - It forces to move the tag to a different commit, it's helpfull if we made a mistake
+72. git tag -d [tag name] - It deletes a tag we no longer want or need
+73. git push origin --tags - When we push a repo to Github it doesn't push the tags automatically, so we need to push them manually
 
 
 
