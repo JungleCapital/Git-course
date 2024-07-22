@@ -110,12 +110,12 @@ GitHub
 51. git push -u local:GitHub - Here we connect set the upstream from an specific branch to a specific (different) branch on GitHub
 52. git branch -M main - This upper -M will rename the branch we are on, it to be in concordance with GitHub to set mastor to main
 53. git branch -r - it shows the branchs the remote repository knows about from all existing branches in the local repo
-54. git checkout origin/main - will detach head and go back to the last commit the remore repo knows about
+54. git checkout origin/main - will detach head and go back to the last commit the remote repo knows about
 
     --Note: When we clone a new repository we only have as workspace the main branch, but we cam have a copy of the other branches
             in our local machine and set it up to track the remote branch.  Below is how.
 
-55. git switch [remore-branch-name] - it creates a new local branch from the remote branch of the same name, makes me a local branch1
+55. git switch [remore-branch-name] - it creates a new local branch from the remote branch of the same name, makes me a local branch
                                       and set it up to track the remote origin/[branch-name]
 
 56. git fetch [remote] [branch] - command fetches branches and history from an specific remote repository, it only updates remote 
@@ -131,6 +131,49 @@ GitHub
     Note: Changes will be merged on the branch we run it from, if we run it from master changes will be made to master branch
     Note 2: As a good practice before PUSH any change first PULL, fix any conflict that might exist and the you can PUSH changes
     Note 3: We can use simple "git pull" Ex. if we are in the main branch it is normally tracking origin/main already 
+
+58. Fork a public project/repo - We fork a repo to create our own repo on Github so we make any changes and try them out
+
+    Work Flow to colaborate on open source projects: 
+    1. Fork the repo
+    2. Clone down to our local machine the fork version - This automatically sets up a remote origin to the Fork version
+    3. Set a second remote named "upstream" to the original repo that was forked so we can pull new possible changes done
+    4. Make changes locally on our machine
+    5. Push changes to the Fork version 
+    6. Create to pull request "PR" from the Fork on the cloud to the original Repo to be able to colaborate to the original project
+
+BACK TO GIT COMMANDS 
+
+59. git rebase [master branch] - This command merges the commits in a way it rewrites history, it puts the commits made on the feature
+                                 branch on the top leaving all commits made on the master before, it just reordered the commits
+
+    Note 1: Only rebase on FEATRUE branches, NEVER on master branch
+    Note 2: Never rebase commits that have been shared with others, if you push commits up to Github DO NOT rebase
+    Note 3. When there is conflicts between files, it can be fix just like a regular merge 
+
+60. git rebase --abort - This is to abort and get back to the state before 
+
+    Note: if conflicts were fixed and you do want to continue with rebase you can just "git add [name of files fixed]"
+          and then use "git rebase --continue"
+
+61. git rebase --continue - This is to continue the rebase command once all conflicts have been resolved
+
+    Note: First fix the conflicts, then add them to stage them and instead of using "git commit" use "git rebase --continue"
+
+62. git rebase -i HEAD~4 - Allows to edit commits, add files, drop commits
+
+    Note 1: it needs to specify how far back we want to rewrite commits with "HEAD~(number)"
+    Note 2: We don't rebase onto another branch, we rebase a series of commits onto the HEAD we currently are (in place)
+
+        COMMAND OPTIONS OF WHAT TO DO WITH EACH COMMIT
+
+        pick - use the commit
+        reword - use the commit but edit the commit message
+        edit - use the commit, but stop for amending
+        fixup - use commit contents but meld it into previous commit and discard the commit message
+        drop - remove commit
+
+
 
 
 
