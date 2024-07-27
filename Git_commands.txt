@@ -57,7 +57,7 @@ Here I will save the commands learn
 31. git stash apply stash@{2} - will apply the stash with that index back to the stack list
 32. git stash drop stash@{2} - will drop the stash with that index saved in the stack list 
 33. git stash clear - will clear all the stack stashes in the list
-34. git checkout + [commit-hash] - to go back to previous commits (detach head)
+34. git checkout + [commit-hash] - to go back to previous commits (Detached HEAD)
 
     Note: to return to present use git switch + [branch name]
 
@@ -197,5 +197,24 @@ BACK TO GIT COMMANDS
 72. git tag -d [tag name] - It deletes a tag we no longer want or need
 73. git push origin --tags - When we push a repo to Github it doesn't push the tags automatically, so we need to push them manually
 
+    REFLOGS
+
+        Git keeps a record of when the tips of branches and other reference where updated in the repo. We can view and 
+        update the reference logs using the "git reflog" command
+
+74 git reflog show [HEAD] - Will show the log of a specific reference (it defaults to HEAD)
+
+    Ex. To view the logs for the tip of the main branch we could run "git reflog show main"
+
+75. git reflog show HEAD@{number} - To access specific ref pointers. Ex. "git reflog show HEAD@{2}" This is like saying 
+                                   where HEAD was 2 moves ago, and can pass them to other commands like checkout, reset and merge
+
+    Note: git checkout HEAD~2 - is detached head and goes 2 commits ago  
+          git checkout HEAD@{2} - it to see 2 moves ago in the reflog (it could be anything, is just to see where head was 
+                                  at 2 moves ago)
+
+76. git reflog master@{one.week.ago} - 
+77. git checkout bugfix@{2.days.ago} - 
+78. git diff main@{0} main@{yesterday} other git diff HEAD HEAD@{yesterday} - 
 
 
