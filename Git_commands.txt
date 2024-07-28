@@ -1,4 +1,4 @@
-Here I will save the commands learn
+Here I will save the commands learned
 
 1. git switch - this swichs between branches 
 2. git branch - shows the existing branches
@@ -224,7 +224,28 @@ BACK TO GIT COMMANDS
     history of the commits for Ex. "git reflog show master" which shows all history on master, then we can take and use the 
     commit hash or the reflog (Ex. master@{2}) to restore it by making another "reset --hard + [commit hash / reflog ref]
 
-    git reset --hard master@{2} which is a pointer OR git reset --hard + [hash number] we got from reflog history
+80. git reset --hard master@{2} which is a pointer OR git reset --hard + [hash number] we got from reflog history
+
+    GIT ALIEASES
+
+    We can set up Git aliases to custome commands, Ex. instead of "git commit" we could have "git ci" but could be anything
+
+81. git config --global alias.[name to be set] + [current git command name]
+
+    Ex. git config --global alias.bcs branch - it will set the alias "bcs" for "branch" 
+    and will able to use git bcs to check the existing branchs
+
+82. echo $HOME/.gitconfig - This is to find the path to the global "gitconfig" file  
+82. code ~/.gitconfig - once we are on the HOME we can type this to open the global gitconfig file to set globla aliases
+
+    Note: In the file we set we need to set a section called "[alias]" and under this we can set it up
+
+    Ex. [alias]
+            cm = commit -am - This will save the alias to add and commit instead of typing git commit -am + message
+
+            Note: Now we could use "git cm + [commit message]" instead of git commit -am + [commit message]
+
+
 
 
 
