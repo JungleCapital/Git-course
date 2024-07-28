@@ -213,8 +213,20 @@ BACK TO GIT COMMANDS
           git checkout HEAD@{2} - it to see 2 moves ago in the reflog (it could be anything, is just to see where head was 
                                   at 2 moves ago)
 
-76. git reflog master@{one.week.ago} - 
-77. git checkout bugfix@{2.days.ago} - 
-78. git diff main@{0} main@{yesterday} other git diff HEAD HEAD@{yesterday} - 
+76. git reflog main@{one.week.ago} - Shows everything in main branch up until one week ago
+77. git checkout main@{2.days.ago} - Take us to one week ago in main branch
+78. git diff main@{0} main@{yesterday} - Shows difference between these 2 timestamps
+79. git reflog show HEAD@{2.days.ago} - Shows all up until 2 days ago
+
+    RESTORE LOST WORK / COMMITS
+
+    If we hard resert (reset --hard) we deleted the commit and its content, we can always use reflogs to access to the 
+    history of the commits for Ex. "git reflog show master" which shows all history on master, then we can take and use the 
+    commit hash or the reflog (Ex. master@{2}) to restore it by making another "reset --hard + [commit hash / reflog ref]
+
+    git reset --hard master@{2} which is a pointer OR git reset --hard + [hash number] we got from reflog history
+
+
+
 
 
