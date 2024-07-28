@@ -238,12 +238,21 @@ BACK TO GIT COMMANDS
 82. echo $HOME/.gitconfig - This is to find the path to the global "gitconfig" file  
 82. code ~/.gitconfig - once we are on the HOME we can type this to open the global gitconfig file to set globla aliases
 
+<<<<<<< HEAD
     Note: In the file we set we need to set a section called "[alias]" and under this we can set it up
 
     Ex. [alias]
             cm = commit -am - This will save the alias to add and commit instead of typing git commit -am + message
 
             Note: Now we could use "git cm + [commit message]" instead of git commit -am + [commit message]
+=======
+    Note: In the file we need to set a section called "[alias]" and under this we can set the alias up
+
+    Ex. [alias]
+            cm = commit -am - This will save the alias to add and commit tha can be used instead of typing git commit -am + message
+
+            Note: Now we could use "git cm + [commit message]" instead of "git commit -am + [commit message]"
+>>>>>>> Branch3
 
 
 
